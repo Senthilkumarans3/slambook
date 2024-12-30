@@ -1,0 +1,107 @@
+/* SlamBook.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('https://source.unsplash.com/1920x1080/?nature,greenery');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Align horizontally */
+    align-items: flex-start; /* Align vertically from the top */
+    padding-top: 20px; /* Adds space at the top */
+    padding-bottom: 20px; /* Adds space at the bottom */
+    min-height: 100vh; /* Ensures full-screen height */
+    box-sizing: border-box;
+    color: #333;
+  }
+  
+  .container {
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ); /* Adds a translucent white background */
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 400px; /* Fixed width */
+    width: 100%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+    text-align: center;
+    overflow: auto;
+  }
+  
+  header h1 {
+    font-size: 2.5rem; /* Slightly increased font size */
+    color: #2e8b57; /* Green Theme */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4); /* Enhanced text shadow */
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2e8b57;
+  }
+  
+  form input,
+  form textarea,
+  form select {
+    width: 100%;
+    padding: 8px; /* Reduced padding */
+    margin-bottom: 12px; /* Slightly reduced margin */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 0.9rem; /* Adjusted font size */
+  }
+  
+  form input:focus,
+  form textarea:focus,
+  form select:focus {
+    border-color: #2e8b57;
+    box-shadow: 0 0 5px rgba(46, 139, 87, 0.5);
+  }
+  
+  form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2e8b57;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #267346;
+  }
+  
+  .entries-list {
+    margin-top: 20px;
+    text-align: left;
+    max-height: 250px; /* Prevents overscreening of entries */
+    overflow-y: auto; /* Adds a scroll for long entries */
+  }
+  
+  .entries-list li {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 4px solid #2e8b57;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .entries-list strong {
+    color: #2e8b57;
+  }
+  
